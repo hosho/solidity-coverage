@@ -22,13 +22,13 @@
   "license": "ISC",
   "dependencies": {
     "death": "^1.1.0",
-    "ethereumjs-testrpc-sc": "hosho/testrpc-sc",
+    "ganache-cli": "^6.1.0",
     "istanbul": "^0.4.5",
     "keccakjs": "^0.2.1",
     "req-cwd": "^1.0.1",
     "shelljs": "^0.7.4",
     "sol-explore": "^1.6.2",
-    "solidity-parser-sc": "hosho/solidity-parser",
+    "solidity-parser": "^0.4.0",
     "web3": "^0.18.4"
   },
   "devDependencies": {
