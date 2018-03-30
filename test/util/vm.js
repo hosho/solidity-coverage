@@ -145,6 +145,7 @@ module.exports.execute = function ex(contract, functionName, args) {
   const stateTrie = new Trie();
   const vm = new VM({
     state: stateTrie,
+    allowUnlimitedContractSize: true
   });
 
   createAccount(stateTrie);
