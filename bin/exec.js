@@ -13,8 +13,8 @@ death((signal, err) => app.cleanUp(err));
 (async () => {
 
   try {
-    app.generateCoverageEnvironment();
-    app.instrumentTarget();
+    await app.generateCoverageEnvironment();
+    await app.instrumentTarget();
     await app.launchTestrpc();
     await app.runTestCommand();
     await app.generateReport();
