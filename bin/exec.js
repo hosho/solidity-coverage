@@ -13,6 +13,7 @@ death((signal, err) => app.cleanUp(err));
 (async () => {
 
   try {
+    app.injectEthEventHandler();
     await app.generateCoverageEnvironment();
     await app.instrumentTarget();
     await app.launchTestrpc();
