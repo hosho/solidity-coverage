@@ -23,6 +23,7 @@
   "dependencies": {
     "death": "^1.1.0",
     "ganache-core": "^2.1.0",
+    "ethereumjs-vm":"^2.3.4",
     "istanbul": "^0.4.5",
     "keccakjs": "^0.2.1",
     "req-cwd": "^1.0.1",
@@ -40,7 +41,7 @@
     "ethereumjs-account": "~2.0.4",
     "ethereumjs-tx": "^1.2.2",
     "ethereumjs-util": "^5.0.1",
-    "ethereumjs-vm": "hosho/ethereumjs-vm-sc#master",
+    "ethereumjs-vm": "^2.3.4",
     "merkle-patricia-tree": "~2.1.2",
     "mocha": "^3.1.0",
     "request": "^2.81.0",
