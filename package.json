@@ -29,7 +29,7 @@
     "req-cwd": "^1.0.1",
     "shelljs": "^0.7.4",
     "sol-explore": "^1.6.2",
-    "solidity-parser": "hosho/solidity-parser#master",
+    "solidity-parser": "hosho/solidity-parser#r3",
     "web3": "^0.20.6"
   },
   "devDependencies": {
