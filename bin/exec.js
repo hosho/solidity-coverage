@@ -10,14 +10,21 @@ const app = new App(config);
 
 death((signal, err) => app.cleanUp(err));
 
-app.generateCoverageEnvironment();
-app.instrumentTarget();
-app.launchTestrpc()
-  .then(() => {
-    app.runTestCommand();
-    app.generateReport();
-  })
-  .catch(err => log(err));
+(async () => {
+
+  try {
+    app.injectEthJsvmOverrides();
+    await app.generateCoverageEnvironment();
+    await app.instrumentTarget();
+    await app.launchTestrpc();
+    await app.runTestCommand();
+    await app.generateReport();
+  }
+  catch (err) {
+    log(err);
+  }
+
+})();
 
 
 
